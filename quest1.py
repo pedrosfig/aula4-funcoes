@@ -1,10 +1,9 @@
 import datetime as dt
 
-def dias_vida(ano,mes,dia):
+def dias_vida(data):
     hoje = dt.date.today()
-    dia = dt.date(year=ano,month=mes,day=dia)
-    dif = hoje - dia
+    dif = hoje - data
     return dif
 
-
-print(dias_vida(1997,12,26))
+eu = dt.date(day=26, month=12,year=1997)
+print(dias_vida(eu))
